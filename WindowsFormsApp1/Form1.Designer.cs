@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
             this.listaAlumnos.Multiline = true;
             this.listaAlumnos.Name = "listaAlumnos";
             this.listaAlumnos.ReadOnly = true;
-            this.listaAlumnos.Size = new System.Drawing.Size(100, 20);
+            this.listaAlumnos.Size = new System.Drawing.Size(481, 122);
             this.listaAlumnos.TabIndex = 5;
             // 
             // button1
@@ -97,6 +97,7 @@ namespace WindowsFormsApp1
             this.button1.TabIndex = 6;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 

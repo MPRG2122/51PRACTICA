@@ -39,6 +39,32 @@ namespace WindowsFormsApp1
             listaAlumnos.AppendText(miAlumnoStr);
             misAlumnos.Agregar(miAlumno);
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Alumno miAlumno = new Alumno();
+            String miAlumnoStr, miAlumnoNotaTexto;
+            miAlumno.Nombre = aluNombre.Text;
+            miAlumno.Nota = Convert.ToInt32(aluNota.Text);
+            if (miAlumno.Nota < 5)
+            {
+                miAlumnoNotaTexto = "Suspenso";
+            }
+            else if (miAlumno.Nota < 7)
+            {
+                miAlumnoNotaTexto = "Aprobado";
+            }
+            else if (miAlumno.Nota < 9)
+            {
+                miAlumnoNotaTexto = "Notable";
+            }
+            else
+                miAlumnoNotaTexto = "Sobresaliente";
+            miAlumnoStr = aluNombre.Text + " " + aluNota.Text + " " +
+           miAlumnoNotaTexto + "\n";
+            listaAlumnos.AppendText(miAlumnoStr);
+            misAlumnos.Agregar(miAlumno);
+        }
     }
 
 
