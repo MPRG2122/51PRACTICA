@@ -9,18 +9,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// MPRGD2122
-namespace WinFormsApp2
+namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
         Alumnos misAlumnos = new Alumnos();
-
         public Form1()
         {
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Alumno miAlumno = new Alumno();
@@ -108,11 +115,7 @@ namespace WinFormsApp2
                 }
             }
         }
+
+
     }
-
-
-
 }
-
-
-
