@@ -39,6 +39,11 @@ namespace WindowsFormsApp1
             listaAlumnos.AppendText(miAlumnoStr);
             misAlumnos.Agregar(miAlumno);
         }
+
+        private void aluNota_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

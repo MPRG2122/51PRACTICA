@@ -33,9 +33,10 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.aluNombre = new System.Windows.Forms.TextBox();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,13 +74,6 @@ namespace WindowsFormsApp1
             this.aluNombre.Size = new System.Drawing.Size(269, 20);
             this.aluNombre.TabIndex = 3;
             // 
-            // aluNota
-            // 
-            this.aluNota.Location = new System.Drawing.Point(421, 48);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(100, 20);
-            this.aluNota.TabIndex = 4;
-            // 
             // listaAlumnos
             // 
             this.listaAlumnos.Location = new System.Drawing.Point(78, 168);
@@ -98,14 +92,21 @@ namespace WindowsFormsApp1
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(395, 49);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listaAlumnos);
-            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.aluNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -113,6 +114,7 @@ namespace WindowsFormsApp1
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,9 +126,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox aluNombre;
-        private System.Windows.Forms.TextBox aluNota;
         private System.Windows.Forms.TextBox listaAlumnos;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 
